@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Registro | רישום בתים משותפים והסדרת זכויות במקרקעין</title>
+<meta name="description" content="Registro – בית אחד לכל הרישומים: רישום בתים משותפים, תיקון צווים, פרצלציה, רישום זכויות ובדיקות רישומיות ליזמים, קבלנים, עורכי דין ובעלי נכסים.">
+<link rel="canonical" href="https://registro.co.il/">
+<meta name="theme-color" content="#0F3D32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="Registro">
+<meta property="og:title" content="Registro | בית אחד לכל הרישומים">
+<meta property="og:description" content="רישום בתים משותפים והסדרת זכויות במקרקעין – מדידות, תשריטים, עורכי דין ורשויות תחת קורת גג אחת.">
+<meta property="og:url" content="https://registro.co.il/">
+<meta property="og:image" content="https://registro.co.il/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{color-scheme:light;box-sizing:border-box}[hidden]{display:none!important}img{max-width:100%}body{margin:0;padding:0}</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Suez+One&family=Rubik:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: a quiet atelier. Ivory paper, deep bottle-green ink and real gold used only as hairline, numeral and seal; sharp corners, wide margins, a tall classical serif. The building draws itself in gold line on a framed green plate and receives its registered seal. */
+:root{
+  color-scheme:light;
+  --bg:#FAF8F2; --surface:#FFFFFF; --ink:#14251F; --soft:#5A655E; --line:#E3DCCB;
+  --green:#0F3D32; --green-2:#0A2D25; --on-green:#F4F0E5; --on-green-soft:#B9C9C1; --green-line:#2A5A4D;
+  --gold:#A8843E; --gold-deep:#876828; --gold-hi:#DCC082;
+  --shadow:0 40px 80px -40px rgba(15,61,50,.45);
+  --display:"David Libre","Frank Ruhl Libre","Times New Roman",serif;
+  --accent-font:"Suez One","David Libre",serif;
+  --body:"Rubik","Assistant","Arial Hebrew",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.8;direction:rtl;text-align:right}
+h1,h2,h3,h4,p,ul,ol,dl{margin:0}
+ul,ol{padding:0;list-style:none}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.16;text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:24px}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:13px;font-weight:600;letter-spacing:.2em;color:var(--gold-deep)}
+.eyebrow::before{content:"";width:44px;height:1px;background:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:12px;font:600 16px var(--body);letter-spacing:.05em;padding:16px 34px;border-radius:0;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn-main{background:var(--green);color:var(--on-green);border-color:var(--green)}
+.btn-main:hover{background:var(--green-2);transform:translateY(-2px)}
+.btn-main::after{content:"←";color:var(--gold-hi)}
+.btn-ghost{border-color:var(--gold);color:var(--ink)}
+.btn-ghost:hover{background:var(--gold);color:#fff}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.mark{font:400 30px var(--accent-font);letter-spacing:.06em;text-decoration:none;direction:ltr;display:flex;align-items:baseline}
+.mark b{color:var(--gold);font-weight:500}
+nav{display:flex;gap:38px;font-size:15px;letter-spacing:.08em}
+nav a{text-decoration:none;color:var(--soft);padding-block:4px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+nav a:hover{color:var(--ink);border-color:var(--gold)}
+.hact{display:flex;align-items:center;gap:10px}
+header .btn{padding:10px 22px;font-size:15px}
+header .btn::after{display:none}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;border:1px solid var(--line);padding:9px 14px;font-size:14px;letter-spacing:.06em}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav div{position:absolute;top:calc(100% + 16px);inset-inline-end:0;background:var(--surface);border:1px solid var(--line);display:grid;min-width:200px;box-shadow:var(--shadow)}
+.mnav a{padding:14px 18px;text-decoration:none;border-top:1px solid var(--line)}
+.mnav a:first-child{border-top:0}
+section,main{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 80px)}
+
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:center;padding-block:96px 104px}
+.hero h1{font-family:var(--accent-font);font-weight:400;font-size:clamp(42px,6.2vw,86px);line-height:1.08;margin-bottom:28px;padding-top:30px;position:relative}
+.hero h1::before{content:"";position:absolute;top:0;inset-inline-start:0;width:72px;height:1px;background:var(--gold)}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.lead{font-size:21px;color:var(--soft);max-width:30em}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.sheet{background:var(--green);padding:44px 38px 30px;box-shadow:var(--shadow);outline:1px solid var(--gold-hi);outline-offset:-14px}
+.bld{width:100%;height:auto;display:block}
+.bld path,.bld circle{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;animation:draw1 1.6s ease-out both}
+.bld .o{stroke:var(--gold-hi);stroke-width:1.6}
+.bld .o.t{stroke-width:1}
+.bld .f{stroke:var(--green-line);stroke-width:1}
+.bld .w{stroke:var(--on-green-soft);stroke-width:.9}
+.bld .stamp{transform-box:fill-box;transform-origin:center;transform:rotate(-8deg);animation:stamp .55s 3.3s cubic-bezier(.2,1.5,.4,1) both}
+.bld .stamp circle{stroke:var(--gold-hi);stroke-dasharray:none;animation:none;fill:var(--green-2)}
+.bld .stamp .r1{stroke-width:2.6}
+.bld .stamp .r2{stroke-width:.8;fill:none}
+.bld .stamp path{stroke:var(--gold-hi);stroke-width:4.5}
+.bld .stamp text{fill:var(--gold-hi);font:500 36px var(--display)}
+@keyframes draw1{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes stamp{from{opacity:0;transform:rotate(-8deg) scale(1.7)}to{opacity:1;transform:rotate(-8deg) scale(1)}}
+
+section{padding-block:104px}
+#who{padding-top:0}
+.osp{text-align:center;border-block:1px solid var(--gold);padding:56px 20px;display:grid;gap:14px;justify-items:center}
+.osp h2{font-family:var(--accent-font);font-weight:400;font-size:clamp(34px,4.6vw,60px);letter-spacing:.02em}
+.osp p{font-size:20px;color:var(--soft);max-width:34em}
+.head{display:grid;gap:18px;max-width:44em}
+.head h2{font-size:clamp(32px,4.2vw,54px)}
+.head p:last-child:not(.eyebrow){color:var(--soft);font-size:18px}
+.whohead{margin-top:84px}
+.who{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:34px}
+.who article{background:var(--surface);border:1px solid var(--line);padding:46px 36px 38px;display:flex;flex-direction:column;gap:14px;outline:1px solid transparent;outline-offset:-10px;transition:transform .3s,box-shadow .3s,outline-color .3s}
+.who article:hover{transform:translateY(-8px);box-shadow:var(--shadow);outline-color:var(--gold)}
+.who svg{width:44px;height:44px;fill:none;stroke:var(--gold);stroke-width:1.1;margin-bottom:6px}
+.who h3{font-size:32px}
+.who .q{font:500 20px/1.45 var(--display);font-weight:500;color:var(--green)}
+.who p{color:var(--soft);font-size:16.5px}
+.who a{margin-top:auto;padding-top:16px;font-weight:600;font-size:15px;letter-spacing:.08em;color:var(--gold-deep);text-decoration:none}
+.who a:hover{color:var(--green)}
+
+.services{background:var(--surface);border-block:1px solid var(--line)}
+.services .wrap{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.65fr);gap:80px;align-items:start}
+.services .head{position:sticky;top:calc(env(safe-area-inset-top,0px) + 110px)}
+.svc details{border-top:1px solid var(--line);transition:background .3s}
+.svc details:last-child{border-bottom:1px solid var(--line)}
+.svc details[open]{background:var(--bg)}
+.svc summary{display:grid;grid-template-columns:70px minmax(0,1fr) 40px;gap:20px;align-items:center;padding:26px 18px;cursor:pointer;list-style:none}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary::after{content:"+";width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font:300 24px/1 var(--body);color:var(--gold-deep);transition:background .25s,color .25s}
+.svc summary:hover::after,.svc details[open] summary::after{background:var(--green);border-color:var(--green);color:var(--gold-hi)}
+.svc details[open] summary::after{content:"–"}
+.svc .let{font:400 54px/.9 var(--display);color:var(--gold)}
+.svc summary h3{font-size:27px}
+.svc summary p{color:var(--soft);font-size:16.5px}
+.more{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 44px;padding:6px 18px 38px;padding-inline-start:108px}
+.more.one{grid-template-columns:minmax(0,1fr);color:var(--soft)}
+.more.one strong,.ddbox strong{color:var(--ink);font-weight:600}
+.more h4{font:600 13px var(--body);letter-spacing:.16em;color:var(--gold-deep);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.more ul{display:grid;gap:4px}
+.more li{color:var(--soft);font-size:16.5px;padding-inline-start:20px;position:relative}
+.more li::before{content:"";position:absolute;inset-inline-start:2px;top:.78em;width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
+.phases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:22px;counter-reset:p}
+.more .phases li{counter-increment:p;padding:20px 0 0;border-top:1px solid var(--gold);font-size:16px}
+.more .phases li::before{content:"שלב " counter(p);position:static;width:auto;height:auto;background:none;transform:none;display:block;font-size:12px;font-weight:600;letter-spacing:.18em;color:var(--gold-deep)}
+.phases h3{font-size:24px;margin-block:6px 8px;color:var(--ink)}
+.ddbox{color:var(--soft)}
+.deliver{margin-block:22px;border:1px solid var(--gold);padding:18px 22px;background:var(--surface)}
+.deliver span{display:block;font-size:12px;font-weight:600;letter-spacing:.18em;color:var(--gold-deep)}
+.deliver b{font:500 23px var(--display);color:var(--ink)}
+
+.contact .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:start}
+.details{margin-top:40px;display:grid}
+.details div{border-top:1px solid var(--line);padding-block:18px}
+.details div:last-child{border-bottom:1px solid var(--line)}
+.details dt{font-size:12px;font-weight:600;letter-spacing:.18em;color:var(--gold-deep)}
+.details dd{margin:0;font:500 27px var(--display);direction:ltr;text-align:right;user-select:all}
+.details a{text-decoration:none}
+.details a:hover{color:var(--gold-deep)}
+form{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--gold);box-shadow:var(--shadow);padding:44px 40px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 28px}
+form h3{grid-column:1/-1;font-size:30px}
+form label{display:grid;gap:4px;font-size:13px;letter-spacing:.08em;color:var(--soft)}
+form .full{grid-column:1/-1}
+input,select,textarea{font:400 17px var(--body);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:10px 2px;width:100%;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+#formNote{font-size:15px;color:var(--gold-deep);padding:12px 16px;border:1px solid var(--gold);background:var(--bg)}
+#formNote.ok{color:var(--green);border-color:var(--green)}
+#formNote.bad{color:#9B2C1F;border-color:#9B2C1F}
+.err{min-height:1.2em;font-size:13px;letter-spacing:0;color:#9B2C1F}
+input[aria-invalid="true"]{border-color:#9B2C1F}
+.trap{position:absolute!important;inset-inline-start:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none;margin:0}
+form{position:relative}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+.consent{font-size:13px;color:var(--soft);line-height:1.6}
+.consent a{color:var(--gold-deep)}
+footer nav.legal{display:flex;gap:18px}footer nav.legal a{color:var(--on-green-soft);text-decoration:none;border-bottom:1px solid transparent}footer nav.legal a:hover{color:var(--on-green);border-color:var(--gold-hi)}
+footer{background:var(--green);color:var(--on-green-soft);font-size:14px;letter-spacing:.04em}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;padding-block:30px}
+footer .mark{font-size:24px;color:var(--on-green)}
+footer .mark b{color:var(--gold-hi)}
+
+@media (max-width:900px){
+  body{font-size:16px}
+  nav{display:none}
+  .mnav{display:block}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:44px;padding-block:52px 64px}
+  .lead{font-size:18px}
+  .sheet{padding:30px 24px 20px;outline-offset:-10px}
+  section{padding-block:68px}
+  .osp{padding:40px 8px}
+  .osp p{font-size:18px}
+  .whohead{margin-top:56px}
+  .who,.services .wrap,.contact .wrap,.phases{grid-template-columns:minmax(0,1fr)}
+  .services .wrap,.contact .wrap{gap:40px}
+  .services .head{position:static}
+  .svc summary{grid-template-columns:48px minmax(0,1fr) 34px;gap:12px;padding:22px 4px}
+  .svc summary::after{width:34px;height:34px}
+  .svc .let{font-size:40px}
+  .svc summary h3{font-size:23px}
+  .more{grid-template-columns:minmax(0,1fr);padding:0 4px 28px}
+  .actions .btn{flex:1 1 auto;justify-content:center}
+  form{padding:30px 22px}
+}
+@media (max-width:520px){ form{grid-template-columns:minmax(0,1fr)} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} html{scroll-behavior:auto} }
+</style>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#top">Registro<b>.</b></a>
+    <nav aria-label="ניווט ראשי">
+      <a href="#who">למי זה מתאים</a>
+      <a href="#services">השירותים</a>
+      
+      <a href="#contact">יצירת קשר</a>
+    </nav>
+    <div class="hact">
+      <a class="btn btn-main" href="#contact">לקבלת הצעה</a>
+      <details class="mnav"><summary>תפריט</summary><div><a href="#who">למי זה מתאים</a><a href="#services">השירותים</a><a href="#contact">יצירת קשר</a></div></details>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero on-deep">
+  <div class="wrap">
+    <div>
+      <h1>בית אחד <em>לכל הרישומים</em></h1>
+      <p class="lead">Registro מעניקה פתרונות מלאים עבור יזמים, קבלנים, עורכי דין ובעלי נכסים בכל הנוגע לרישומי מקרקעין. Registro מנהלת את כל התהליך הרישומי ופועלת בשיתוף פעולה עם טובי עורכי הדין, המודדים, המהנדסים והאדריכלים בתחום.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="#contact">לבדיקת פרויקט וקבלת הצעה</a>
+        <a class="btn btn-ghost" href="#services">מה כולל השירות</a>
+      </div>
+    </div>
+    <div class="sheet">
+      <svg class="bld" viewBox="0 0 440 372" role="img" aria-label="איור קווי של בניין מגורים">
+      <path class="o" pathLength="1" style="animation-delay:0s" d="M20 340 H420"/>
+      <path class="o" pathLength="1" style="animation-delay:0.3s" d="M130 340 V60 H310 V340"/>
+      <path class="o" pathLength="1" style="animation-delay:0.9s" d="M310 180 H380 V340"/>
+      <path class="o" pathLength="1" style="animation-delay:1.1s" d="M160 60 V34 H280 V60 M150 34 H290"/>
+      <path class="f" pathLength="1" style="animation-delay:1.4s" d="M130 100 H310 M130 140 H310 M130 180 H310 M130 220 H310 M130 260 H310 M130 300 H310 M310 220 H380 M310 260 H380 M310 300 H380"/>
+      <path class="w" pathLength="1" style="animation-delay:1.6s" d="M232 70 h28 v22 h-28 z M270 70 h28 v22 h-28 z M146 80 V66 H204 V80 M175 66 V80"/>
+      <path class="o t" pathLength="1" style="animation-delay:1.7000000000000002s" d="M120 80 H218 V96 H120 Z M144 80 V96 M169 80 V96 M194 80 V96"/>
+      <path class="w" pathLength="1" style="animation-delay:1.72s" d="M232 110 h28 v22 h-28 z M270 110 h28 v22 h-28 z M146 120 V106 H204 V120 M175 106 V120"/>
+      <path class="o t" pathLength="1" style="animation-delay:1.82s" d="M120 120 H218 V136 H120 Z M144 120 V136 M169 120 V136 M194 120 V136"/>
+      <path class="w" pathLength="1" style="animation-delay:1.84s" d="M232 150 h28 v22 h-28 z M270 150 h28 v22 h-28 z M146 160 V146 H204 V160 M175 146 V160"/>
+      <path class="o t" pathLength="1" style="animation-delay:1.9400000000000002s" d="M120 160 H218 V176 H120 Z M144 160 V176 M169 160 V176 M194 160 V176"/>
+      <path class="w" pathLength="1" style="animation-delay:1.96s" d="M232 190 h28 v22 h-28 z M270 190 h28 v22 h-28 z M146 200 V186 H204 V200 M175 186 V200"/>
+      <path class="o t" pathLength="1" style="animation-delay:2.06s" d="M120 200 H218 V216 H120 Z M144 200 V216 M169 200 V216 M194 200 V216"/>
+      <path class="w" pathLength="1" style="animation-delay:2.08s" d="M232 230 h28 v22 h-28 z M270 230 h28 v22 h-28 z M146 240 V226 H204 V240 M175 226 V240"/>
+      <path class="o t" pathLength="1" style="animation-delay:2.18s" d="M120 240 H218 V256 H120 Z M144 240 V256 M169 240 V256 M194 240 V256"/>
+      <path class="w" pathLength="1" style="animation-delay:2.2s" d="M232 270 h28 v22 h-28 z M270 270 h28 v22 h-28 z M146 280 V266 H204 V280 M175 266 V280"/>
+      <path class="o t" pathLength="1" style="animation-delay:2.3000000000000003s" d="M120 280 H218 V296 H120 Z M144 280 V296 M169 280 V296 M194 280 V296"/>
+      <path class="w" pathLength="1" style="animation-delay:2.3s" d="M322 190 h18 v22 h-18 z M350 190 h18 v22 h-18 z M322 230 h18 v22 h-18 z M350 230 h18 v22 h-18 z M322 270 h18 v22 h-18 z M350 270 h18 v22 h-18 z M336 340 V312 H356 V340"/>
+      <path class="o t" pathLength="1" style="animation-delay:2.5s" d="M196 340 V312 H244 V340 M220 312 V340 M184 306 H256 M172 46 H268"/>
+      <path class="w" pathLength="1" style="animation-delay:2.6s" d="M70 340 V318 M404 340 V324"/>
+      <circle class="w" pathLength="1" style="animation-delay:2.7s" cx="70" cy="296" r="22"/><circle class="w" pathLength="1" style="animation-delay:2.8s" cx="404" cy="310" r="14"/>
+      <g class="stamp"><circle class="r1" cx="220" cy="196" r="72"/><circle class="r2" cx="220" cy="196" r="62"/><path class="o" pathLength="1" style="animation-delay:3.7s" d="M194 172 l17 17 l34 -38"/><text x="220" y="236" text-anchor="middle">נרשם</text></g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section id="who">
+  <div class="wrap">
+    <div class="osp">
+      <h2>One stop shop</h2>
+      <p>מדידות, תשריטים, עורכי דין, רשויות, בנקים וכדומה. כל העבודה הדרושה מנוהלת תחת קורת גג אחת.</p>
+    </div>
+    <div class="head whohead">
+      <p class="eyebrow">למי זה מתאים</p>
+    </div>
+    <div class="who">
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M8 38V12l14-6v32M22 16l14 5v17M4 38h36M13 16v3M13 23v3M13 30v3M29 25v3M29 31v3"/></svg>
+        <h3>יזמים וקבלנים</h3>
+        <p class="q">מקום אחד לכל הרישומים, מבדיקת העסקה ועד סוף הפרויקט.</p>
+        <p>מתחילים ב־Due diligence רישומי ובבדיקת מצב הרישום הקיים, וממשיכים איתכם עד הסדרה מלאה של הרישום: זכויות היזם, הערות אזהרה ומשכנתאות, הבנק המלווה, הבית המשותף ורישום הדירות על שם הרוכשים.</p>
+        <a href="#contact">לשיחה על פרויקט ←</a>
+      </article>
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M11 5h16l8 8v26H11zM27 5v8h8M16 20h14M16 26h14M16 32h9"/></svg>
+        <h3>עורכי דין</h3>
+        <p class="q">שקט מלא בכל מה שקשור לרישום.</p>
+        <p>אתם ממשיכים ללוות את הלקוח, ואנחנו מטפלים בכל הרישומים ומרשמי הזכויות מאחורי הקלעים, בלי שום קשר מול הלקוח שלכם. מכר, משכנתאות והערות, בתים משותפים, תיקוני צווים, ירושות ותיקים תקועים.</p>
+        <a href="#contact">לשיתוף פעולה ←</a>
+      </article>
+      <article>
+        <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M6 21L22 7l16 14M10 18v20h24V18M18 38V27h8v11"/><circle cx="22" cy="18" r="1.6"/></svg>
+        <h3>בעלי נכסים</h3>
+        <p class="q">הנכס שלכם, רשום על שמכם כמו שצריך.</p>
+        <p>שירות מלא להסדרת הזכויות ולרישום הנכס על שם הבעלים הנכון: תיקון בעיות במרשמים, רישום של כל סוגי העסקאות והעברות הזכויות. נבדוק את המצב ונלווה אתכם לאורך כל ההליך.</p>
+        <a href="#contact">לבדיקת מצב הרישום ←</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">השירותים</p>
+      <h2>ניהול כל שירותי הרישום, בכתובת אחת</h2>
+    </div>
+    <div class="svc">
+<details><summary><span class="let" aria-hidden="true">א</span><span><h3>בתים משותפים</h3><p>רישום, תיקון וביטול צווים</p></span></summary><div class="more"><div><h4>רישום בית משותף</h4><ul><li>בדיקת המצב הרישומי הקיים</li><li>בדיקת התאמה בין היתר הבנייה, התשריטים והמצב בפועל</li><li>ריכוז נסחי טאבו ומסמכי זכויות</li><li>הזמנת והנחיית מודד/אדריכל להכנת תשריט בית משותף</li><li>הגדרת הדירות ותתי-החלקות</li><li>הגדרת מחסנים וחניות</li><li>הצמדת חניות, מחסנים, גגות, גינות, מרפסות וכיו&quot;ב</li><li>קביעת חלקי כל דירה ברכוש המשותף</li><li>זיהוי והגדרת הרכוש המשותף</li><li>טיפול במתקנים משותפים</li><li>ניסוח תקנון מוסכם</li><li>קביעת הוראות מיוחדות בתקנון</li><li>קביעת זכויות בנייה עתידיות, ככל שנדרש וניתן</li><li>הסדרת זכויות שימוש ייחודיות</li><li>קבלת הסכמות מבעלי הזכויות, בעלי משכנתאות ובעלי הערות</li><li>טיפול מול רמ&quot;י כאשר הקרקע בחכירה</li><li>הגשת תיק רישום למפקח על רישום מקרקעין</li><li>טיפול בהערות/דחיות עד לקבלת צו</li><li>קבלת צו רישום בית משותף</li><li>פתיחת תתי-החלקות החדשות</li></ul></div><div><h4>תיקון צו בית משותף</h4><ul><li>הוספת יחידות חדשות</li><li>גריעת יחידות</li><li>פיצול דירה או יחידה</li><li>איחוד תתי-חלקות</li><li>שינוי שטחי דירות</li><li>שינוי הצמדות</li><li>העברת הצמדה מדירה לדירה</li><li>הוספת חניה/מחסן כהצמדה</li><li>ביטול הצמדה</li><li>שינוי הרכוש המשותף</li><li>הצמדת חלק מהרכוש המשותף</li><li>תיקון חלקים ברכוש המשותף</li><li>שינוי תקנון מוסכם</li><li>התאמת הצו להיתר בנייה חדש</li><li>רישום תוספות בנייה</li><li>תיקון בעקבות הרחבת דירות</li><li>תיקון בעקבות בניית ממ&quot;דים</li><li>תיקון בעקבות סגירת מרפסות/הרחבות חוקיות</li><li>תיקון טעויות בתשריט או בצו</li></ul></div><div><h4>ביטול בית משותף</h4><ul><li>בדיקת התנאים לביטול הצו</li><li>הכנת בקשה לביטול רישום הבית המשותף</li><li>טיפול בבעלי הזכויות</li><li>טיפול במשכנתאות</li><li>טיפול בהערות אזהרה</li><li>טיפול בעיקולים/צווים</li><li>קבלת הסכמות נדרשות</li><li>תיאום עם הבנק המלווה</li><li>ביטול תתי-החלקות</li><li>החזרת הרישום לחלקה</li><li>יצירת המבנה הרישומי הנדרש לקראת הפרויקט החדש</li></ul></div></div></details>
+<details><summary><span class="let" aria-hidden="true">ב</span><span><h3>פרויקטים חדשים</h3><p>רישום פרויקט מלא, מכל סוג, עד רישום הרוכשים</p></span></summary><div class="more"><div><h4>רישום פרויקט מקצה לקצה</h4><ul><li>בדיקת מצב רישומי בתחילת הפרויקט</li><li>איתור חסמי רישום</li><li>טיפול בפרצלציה</li><li>רישום זכויות היזם</li><li>רישום הערות אזהרה לרוכשים</li><li>רישום משכנתאות</li><li>רישום שעבודים/התחייבויות בהתאם למבנה העסקה</li><li>טיפול בבנק המלווה</li><li>רישום בית משותף</li><li>רישום הדירות על שם הרוכשים</li><li>רישום משכנתאות הרוכשים</li><li>מחיקת הערות זמניות</li><li>סגירת תיק הרישום של הפרויקט</li></ul></div><div><h4>רישום זכויות של רוכשי דירות</h4><ul><li>בדיקת שרשרת הזכויות</li><li>הכנת שטרי מכר</li><li>אישורי מס שבח</li><li>אישורי מס רכישה</li><li>אישור עירייה</li><li>אישורי היטל השבחה לפי הצורך</li><li>אישורי רמ&quot;י</li><li>אישורי חברה משכנת</li><li>מחיקת משכנתאות/שעבודים קודמים</li><li>רישום בעלות</li><li>רישום חכירה</li><li>רישום משכנתת הרוכש</li></ul></div><div><h4>פרויקטים מורכבים ומספר מבנים</h4><ul><li>בית משותף מורכב</li><li>מספר אגפים</li><li>מספר מגדלים</li><li>מגורים + מסחר + משרדים</li><li>חניון משותף</li><li>מערכות משותפות למספר מבנים</li><li>חלוקת הוצאות בין אגפים</li><li>תקנון מורכב</li><li>הפרדת ניהול בין מסחר למגורים</li><li>הצמדת שטחים</li><li>זכויות מעבר בין חלקים</li><li>מתקנים משותפים</li></ul></div><div><h4>מרכזים מסחריים ונכסים מניבים</h4><ul><li>חלוקת המרכז ליחידות רישומיות</li><li>רישום חנויות</li><li>רישום משרדים</li><li>רישום מחסנים</li><li>רישום חניות</li><li>רישום שטחים טכניים</li><li>רישום שטחי שירות</li><li>הסדרת רכוש משותף</li><li>הסדרת שטחי פריקה וטעינה</li><li>הסדרת דרכי גישה</li><li>תקנון ניהול מסחרי</li><li>חלוקת הוצאות אחזקה</li><li>זכויות שילוט</li><li>זכויות מעבר</li><li>שימושים משותפים</li><li>זכויות בנייה בלתי מנוצלות</li></ul></div></div></details>
+<details><summary><span class="let" aria-hidden="true">ג</span><span><h3>התחדשות עירונית</h3><p>הסדרת הרישום הישן ורישום הפרויקט החדש</p></span></summary><div class="more one"><p><strong>מהרישום הישן ועד דירות התמורה.</strong> ליווי רישומי לכל אורך הפרויקט, בשלושה שלבים.</p><ol class="phases"><li><h3>לפני הפרויקט</h3><p>בדיקת נסחים, איתור בעלי זכויות, ירושות לא רשומות, משכנתאות, עיקולים, הערות, טעויות רישום, אי התאמות, הצמדות וזכויות לא רשומות.</p></li><li><h3>במהלך הפרויקט</h3><p>הערות אזהרה, בטוחות, רישומי היזם, רישומי הבנק המלווה, הסדרת משכנתאות הדיירים וטיפול בחסמים.</p></li><li><h3>בסיום</h3><p>ביטול הבית הישן ככל שנדרש, רישום המבנה החדש, הכנת תקנון, רישום דירות התמורה, הצמדות, רישום זכויות הבעלים החדשות ומשכנתאות.</p></li></ol></div></details>
+<details><summary><span class="let" aria-hidden="true">ד</span><span><h3>קרקעות</h3><p>הסכמי שיתוף, פרצלציה, זיקות ורישום ראשון</p></span></summary><div class="more"><div><h4>הסכמי שיתוף</h4><ul><li>בדיקת מבנה הבעלות במושע</li><li>עריכת הסכם שיתוף</li><li>חלוקת שימוש במקרקעין</li><li>ייחוד אזורי שימוש</li><li>ייחוד יחידות</li><li>ייחוד חניות/מחסנים/חצרות</li><li>חלוקת זכויות בנייה</li><li>הסדרת זכויות בנייה עתידיות</li><li>מנגנוני ניהול</li><li>מנגנוני הוצאות</li><li>זכויות מעבר</li><li>מנגנוני מכירה</li><li>זכות סירוב/קדימה חוזית לפי הצורך</li><li>הכנת תשריט הסכם שיתוף</li><li>עבודה מול מודד</li><li>רישום ההסכם בטאבו</li></ul></div><div><h4>פרצלציה, איחוד וחלוקה</h4><ul><li>פרצלציה רצונית</li><li>פרצלציה לא רצונית</li><li>איחוד חלקות</li><li>חלוקת חלקה</li><li>יצירת חלקות חדשות</li><li>רישום תצ&quot;ר</li><li>תיאום מול מודדים</li><li>תיאום מול מפ&quot;י</li><li>תיאום עם ועדות תכנון</li><li>התאמת הזכויות לטבלת הקצאה ואיזון</li><li>רישום זכויות לאחר איחוד וחלוקה</li><li>טיפול במשכנתאות ובהערות שעוברות לחלקות החדשות</li></ul></div><div><h4>זיקות הנאה וזכויות מיוחדות</h4><ul><li>רישום זיקת מעבר</li><li>זיקת דרך</li><li>זיקת חניה</li><li>זיקת תשתיות</li><li>זיקות הדדיות בין חלקות</li><li>זכויות מעבר בין בניינים</li><li>רישום זיקות בפרויקטים מורכבים</li><li>תיקון זיקה</li><li>ביטול זיקת הנאה</li></ul></div><div><h4>רישום ראשון של מקרקעין</h4><ul><li>חקר היסטוריית הזכויות</li><li>איתור מסמכים היסטוריים</li><li>תצהירי זכויות</li><li>עבודה מול מודד</li><li>תשריט לרישום ראשון</li><li>אישורי מפ&quot;י</li><li>איתור בעלי מקרקעין סמוכים</li><li>פרסום</li><li>טיפול בהתנגדויות</li><li>הליך בפני המפקח</li><li>השלמת הרישום</li></ul></div></div></details>
+<details><summary><span class="let" aria-hidden="true">ה</span><span><h3>עסקאות וזכויות</h3><p>מכר, חכירה, משכנתאות, ירושות והערות</p></span></summary><div class="more"><div><h4>העברות זכויות ועסקאות טאבו</h4><ul><li>רישום מכר</li><li>רישום העברה ללא תמורה</li><li>העברה בין קרובים</li><li>העברה אגב גירושין</li><li>העברה מכוח הסכם חלוקת עיזבון</li><li>רישום ירושה</li><li>רישום זכויות מכוח צוואה</li><li>העברה בין חברות</li><li>העברה במסגרת שינוי מבנה</li><li>רישום חכירה</li><li>העברת חכירה</li><li>הארכת חכירה</li><li>ביטול חכירה</li></ul></div><div><h4>הערות אזהרה והערות אחרות</h4><ul><li>רישום הערת אזהרה על התחייבות למכר</li><li>רישום הערה על התחייבות להימנע מעסקה</li><li>הערה בדבר צורך בהסכמה</li><li>הערה לטובת בנק</li><li>הערה בגין התחייבות לרישום משכנתה</li><li>הערות במסגרת תמ&quot;א 38/התחדשות עירונית</li><li>תיקון הערות</li><li>ביטול הערות אזהרה</li><li>טיפול בהערות ישנות שמונעות עסקה</li></ul></div><div><h4>משכנתאות ושעבודים</h4><ul><li>רישום משכנתה</li><li>רישום משכנתה פרטית</li><li>תיקון משכנתה</li><li>הגדלת/שינוי משכנתה לפי המסלול המתאים</li><li>פדיון משכנתה</li><li>מחיקת משכנתה</li><li>רישום התחייבות לרישום משכנתה</li><li>טיפול במשכנתאות של רוכשים בפרויקט</li><li>טיפול במשכנתאות קיימות במסגרת התחדשות עירונית</li><li>תיאום מול בנקים וגופים מוסדיים</li></ul></div><div><h4>רמ״י וחברה משכנת</h4><ul><li>בדיקת אישור זכויות</li><li>העברת זכויות בחברה משכנת</li><li>העברת זכויות ברמ&quot;י</li><li>היוון</li><li>הארכת חכירה</li><li>רישום חכירה</li><li>תיקון תנאי חכירה</li><li>פיצול חכירה</li><li>רישום בעלות בעקבות רפורמת רמ&quot;י</li><li>קבלת אישורים לצורך טאבו</li><li>מעבר מרישום בחברה משכנת לרישום בטאבו</li></ul></div></div></details>
+<details><summary><span class="let" aria-hidden="true">ו</span><span><h3>פתרון בעיות רישומיות</h3><p>ניקוי נסח טאבו, תיקון רישומים ותיקים תקועים</p></span></summary><div class="more"><div><h4>תיקון רישומים וניקוי טאבו</h4><ul><li>תיקון טעויות סופר</li><li>תיקון שם</li><li>תיקון מספר זהות</li><li>התאמת פרטי בעלים</li><li>תיקון רישום היסטורי</li><li>טיפול בבעלים שנפטר</li><li>רישום ירושה שלא נרשמה שנים</li><li>מחיקת הערות ישנות</li><li>מחיקת משכנתאות היסטוריות</li><li>טיפול בזכויות של חברות שנמחקו/פורקו</li><li>שחזור שרשרת זכויות</li><li>חידוש רישום שנמחק/הושמד במקרים המתאימים</li><li>תיקון שטח וגבולות במקרים המתאימים</li></ul></div><div><h4>תיקים שנדחו על ידי הטאבו או המפקח</h4><ul><li>קבלת תיק שנדחה</li><li>ניתוח סיבת הדחייה</li><li>תיקון מסמכים</li><li>השלמת חתימות</li><li>פתרון אי התאמות</li><li>מענה להערות המפקח/הרשם</li><li>הגשה חוזרת</li><li>ערר במקרה המתאים</li></ul></div></div></details>
+<details><summary><span class="let" aria-hidden="true">ז</span><span><h3>Back office לעורכי דין</h3><p>כל נושא רישומי ופתרון בעיות רישומיות</p></span></summary><div class="more"><div><h4>שירותי רישום לעורכי דין</h4><ul><li>רישום מכר</li><li>רישום משכנתאות</li><li>רישום הערות</li><li>בתים משותפים</li><li>תיקוני צווים</li><li>הסכמי שיתוף</li><li>פרצלציות</li><li>רישום ירושות</li><li>פתרון תיקים תקועים</li><li>קשר עם מודדים ואדריכלים</li><li>הגשות ומעקב</li></ul></div></div></details>
+<details><summary><span class="let" aria-hidden="true">ח</span><span><h3>Due diligence רישומי</h3><p>בדיקה לפני כל עסקת נדל״ן</p></span></summary><div class="more"><div class="ddbox"><p><strong>לדעת מה מחכה ברישום, לפני שנכנסים לעסקה.</strong> בדיקה רישומית ליזמים, לקבלנים ולמשקיעים לפני כל עסקת נדל״ן.</p><div class="deliver"><span>התוצר</span><b>דו״ח חסמי רישום ותוכנית פעולה</b></div><a class="btn btn-main" href="#contact">להזמנת בדיקה</a></div><div><h4>מה הבדיקה בוחנת</h4><ul><li>מצב רישומי ואם אין רישום, האם ניתן בכלל לרשום את הנכס</li><li>מה חסר רישומית</li><li>האם נדרשת פרצלציה</li><li>האם יש התאמה בין תכנון לקניין</li><li>מי הבעלים</li><li>אילו ירושות טרם נרשמו</li><li>אילו עיקולים קיימים</li><li>אילו משכנתאות קיימות</li><li>האם קיימות סתירות בשטחים</li><li>האם ההצמדות תקינות</li><li>האם קיימות זכויות צדדים שלישיים</li><li>אילו אישורים יידרשו</li><li>מהו סדר הפעולות</li><li>מה צפוי לעכב את הרישום</li><li>לוח זמנים ותקציב משוער</li></ul></div></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact on-deep" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="head">
+        <p class="eyebrow">יצירת קשר</p>
+        <h2>ספרו לנו על הנכס</h2>
+        <p>שיחת היכרות קצרה, בלי התחייבות. נבין את מצב הרישום ונחזור אליכם עם הצעה לתוכנית עבודה.</p>
+      </div>
+      <dl class="details">
+        <div><dt>טלפון</dt><dd><a href="tel:0547506064">054-750-6064</a></dd></div>
+        <div><dt>דואר אלקטרוני</dt><dd><a href="mailto:info@registro.co.il">info@registro.co.il</a></dd></div>
+      </dl>
+    </div>
+    <form id="lead" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="פנייה חדשה מאתר Registro">
+      <input type="hidden" name="from_name" value="אתר Registro">
+      <input type="checkbox" name="botcheck" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <h3>פרטי הפרויקט</h3>
+      <label>שם מלא *<input id="f-name" name="name" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="e-name"><span class="err" id="e-name" aria-live="polite"></span></label>
+      <label>טלפון *<input id="f-phone" name="phone" type="tel" inputmode="tel" dir="ltr" autocomplete="tel" required maxlength="20" aria-describedby="e-phone"><span class="err" id="e-phone" aria-live="polite"></span></label>
+      <label class="full">דואר אלקטרוני *<input id="f-email" name="email" type="email" dir="ltr" autocomplete="email" required maxlength="120" aria-describedby="e-email"><span class="err" id="e-email" aria-live="polite"></span></label>
+      <label>אני פונה בתור<select id="f-role" name="role"><option>יזם או קבלן</option><option>עורך דין</option><option>בעל נכס</option><option>נציגות בניין</option><option>אחר</option></select></label>
+      <label>שם החברה או המשרד<input id="f-org" name="org" autocomplete="organization" maxlength="120"></label>
+      <label class="full">עיר וכתובת הנכס או הפרויקט<input id="f-addr" name="addr" maxlength="200"></label>
+      <p class="full consent">שליחת הטופס מהווה הסכמה לכך שנחזור אליכם בנוגע לפנייה, בהתאם ל<a href="privacy.html">מדיניות הפרטיות</a>.</p>
+      <div class="full"><button class="btn btn-main" type="submit" id="f-submit">תחזרו אליי</button></div>
+      <p class="full" id="formNote" role="status" aria-live="polite" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="mark" href="#top">Registro<b>.</b></a>
+    <span>© 2026 Registro · רישום והסדרת מקרקעין</span>
+    <nav class="legal" aria-label="מידע משפטי"><a href="privacy.html">מדיניות פרטיות</a><a href="accessibility.html">הצהרת נגישות</a></nav>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').open=false})});
+(function(){
+  var f=document.getElementById('lead'),note=document.getElementById('formNote'),btn=document.getElementById('f-submit');
+  var loadedAt=Date.now(),sending=false;
+  var rules={
+    'f-name':function(v){return v.length<2?'נא להזין שם מלא.':''},
+    'f-phone':function(v){var d=v.replace(/[\s\-()]/g,'');return /^(\+972|0)([23489]|5\d|7\d)\d{7}$/.test(d)?'':'נא להזין מספר טלפון ישראלי תקין.'},
+    'f-email':function(v){return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)?'':'נא להזין כתובת דואר אלקטרוני תקינה.'}
+  };
+  function check(id){
+    var el=document.getElementById(id),msg=rules[id](el.value.trim());
+    document.getElementById('e-'+id.slice(2)).textContent=msg;
+    el.setAttribute('aria-invalid',msg?'true':'false');
+    return !msg;
+  }
+  Object.keys(rules).forEach(function(id){
+    var el=document.getElementById(id);
+    el.addEventListener('blur',function(){if(el.value.trim())check(id)});
+    el.addEventListener('input',function(){if(el.getAttribute('aria-invalid')==='true')check(id)});
+  });
+  function show(cls,text){note.hidden=false;note.className='full '+cls;note.textContent=text}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(sending)return;
+    var bad=Object.keys(rules).filter(function(id){return !check(id)});
+    if(bad.length){show('bad','יש לתקן את השדות המסומנים.');document.getElementById(bad[0]).focus();return}
+    if(f.botcheck.checked||Date.now()-loadedAt<3000){show('ok','תודה! הפרטים התקבלו, ונחזור אליכם בהקדם.');return}
+    var data=Object.fromEntries(new FormData(f));
+    data.name=data.name.trim();data.email=data.email.trim();data.phone=data.phone.trim();
+    data.replyto=data.email;
+    sending=true;btn.disabled=true;btn.firstChild.nodeValue='שולחים…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||!j.success)throw new Error(j.message||r.status);return j})})
+      .then(function(){
+        f.reset();loadedAt=Date.now();
+        Object.keys(rules).forEach(function(id){document.getElementById(id).removeAttribute('aria-invalid')});
+        show('ok','תודה! הפרטים התקבלו, ונחזור אליכם בהקדם.');
+      })
+      .catch(function(){show('bad','השליחה לא הצליחה. אפשר לנסות שוב בעוד רגע, או להתקשר ל־054-750-6064.')})
+      .finally(function(){sending=false;btn.disabled=false;btn.firstChild.nodeValue='תחזרו אליי'});
+  });
+})();
+</script>
+
+</body></html>
