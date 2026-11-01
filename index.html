@@ -2,25 +2,92 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Registro | רישום בתים משותפים והסדרת זכויות במקרקעין</title>
-<meta name="description" content="Registro – בית אחד לכל הרישומים: רישום בתים משותפים, תיקון צווים, פרצלציה, רישום זכויות ובדיקות רישומיות ליזמים, קבלנים, עורכי דין ובעלי נכסים.">
-<link rel="canonical" href="https://registro.co.il/">
-<meta name="theme-color" content="#0F3D32">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="he_IL">
-<meta property="og:site_name" content="Registro">
-<meta property="og:title" content="Registro | בית אחד לכל הרישומים">
-<meta property="og:description" content="רישום בתים משותפים והסדרת זכויות במקרקעין – מדידות, תשריטים, עורכי דין ורשויות תחת קורת גג אחת.">
-<meta property="og:url" content="https://registro.co.il/">
-<meta property="og:image" content="https://registro.co.il/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<style>:root{color-scheme:light;box-sizing:border-box}[hidden]{display:none!important}img{max-width:100%}body{margin:0;padding:0}</style>
-</head>
-<body>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Registro: בית אחד לכל הרישומים. פתרונות מלאים ליזמים, קבלנים, עורכי דין ובעלי נכסים בכל הנוגע לרישומי מקרקעין.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* ===== scroll-craft layer ===== */
+.rail{position:fixed;inset-block:18vh 18vh;inset-inline-start:22px;width:30px;z-index:20;pointer-events:none;display:none}
+.rail svg{width:100%;height:100%;overflow:visible}
+.rail .fl{fill:none;stroke:var(--gold);stroke-width:1.2;opacity:.35;transition:fill .5s,opacity .5s}
+.rail .fl.on{fill:var(--gold);opacity:.9}
+.rail .roof{fill:none;stroke:var(--gold);stroke-width:1.4;opacity:.5}
+.rail .seal{opacity:0;transform:scale(1.8) rotate(-12deg);transform-box:fill-box;transform-origin:center;transition:opacity .3s,transform .5s cubic-bezier(.2,1.5,.4,1)}
+.rail.done .seal{opacity:1;transform:scale(1) rotate(-8deg)}
+.rail.deep .fl{stroke:var(--gold-hi)}
+@media (min-width:1180px){.rail{display:block}}
+.topbar{position:fixed;inset:0 0 auto 0;height:3px;z-index:60;background:transparent;pointer-events:none}
+.topbar i{display:block;height:100%;width:calc(var(--p,0)*100%);background:var(--gold);transform-origin:right}
+@media (min-width:1180px){.topbar{display:none}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0)*90ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .who article.rv{clip-path:inset(0 0 100% 0);opacity:1;transform:none;transition:clip-path 1s cubic-bezier(.7,0,.2,1),transform .35s,box-shadow .35s,outline-color .35s;transition-delay:calc(var(--d,0)*140ms),0s,0s,0s}
+.js .who article.rv.in{clip-path:inset(0 0 0 0)}
+.js .svc details.rv{transform:translateX(-22px)}
+.js .svc details.rv.in{transform:none}
+.hero .sheet{will-change:transform}
+.bld{transform:translate3d(0,calc(var(--py,0)*-1px),0)}
+.bld .stamp{translate:0 calc(var(--py,0)*.7px)}
+.hero h1{transform:translate3d(0,calc(var(--py,0)*.25px),0)}
+.svc details[open] .let{color:var(--gold-deep)}
+.deepseal{position:absolute;inset-inline-end:6%;top:10%;width:min(260px,28vw);opacity:0;transform:scale(1.6) rotate(-14deg);transition:opacity .4s,transform .7s cubic-bezier(.2,1.5,.4,1);pointer-events:none}
+.deepseal.in{opacity:.16;transform:rotate(-8deg)}
+.contact{position:relative;overflow:hidden}
+.contact .wrap{position:relative}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .who article.rv{opacity:1!important;transform:none!important;clip-path:none!important}.bld,.hero h1{transform:none!important}.deepseal{opacity:.16;transform:rotate(-8deg)}}
+
+/* ===== luxury layer ===== */
+:root{--ease:cubic-bezier(.16,1,.3,1)}
+header{transition:background .5s,box-shadow .5s,border-color .5s}
+header.sc{background:rgba(250,248,242,.78);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border-bottom-color:rgba(168,132,62,.45);box-shadow:0 10px 30px -22px rgba(15,61,50,.5)}
+.hero .sheet{position:relative;overflow:hidden;transition:box-shadow .6s}
+.hero .sheet::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;background:radial-gradient(420px circle at var(--mx,70%) var(--my,25%),rgba(220,192,130,.22),transparent 60%);transition:opacity .6s}
+.hero .sheet::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.bld{position:relative;z-index:2;translate:calc(var(--mxp,0)*10px) calc(var(--myp,0)*6px)}
+.contact::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.hero h1,.osp h2,.head h2{letter-spacing:.005em}
+.js .hero h1{animation:focusIn 1.6s var(--ease) both}
+.js .hero h1 em{animation:focusIn 1.8s .25s var(--ease) both}
+@keyframes focusIn{from{opacity:0;filter:blur(10px);letter-spacing:.06em}to{opacity:1;filter:blur(0);letter-spacing:.005em}}
+.js .osp h2.rv,.js .head h2.rv{opacity:0;filter:blur(8px);transform:none;transition:opacity 1.2s var(--ease),filter 1.2s var(--ease),letter-spacing 1.4s var(--ease);letter-spacing:.05em}
+.js .osp h2.rv.in,.js .head h2.rv.in{opacity:1;filter:blur(0);letter-spacing:.005em}
+.js .rv{transition-duration:1.1s;transition-timing-function:var(--ease)}
+.osp{position:relative;border-block-color:transparent}
+.osp::before,.osp::after{content:"";position:absolute;inset-inline:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform 1.8s var(--ease)}
+.osp::before{top:0}.osp::after{bottom:0}
+.osp.in::before,.osp.in::after{transform:scaleX(1)}
+.osp h2::after{content:"";display:block;width:9px;height:9px;margin:18px auto 0;background:var(--gold);transform:rotate(45deg) scale(0);transition:transform 1s .9s var(--ease)}
+.osp.in h2::after{transform:rotate(45deg) scale(1)}
+.who article{position:relative;transition-duration:.6s;transition-timing-function:var(--ease)}
+.who article::before,.who article::after{content:"";position:absolute;width:22px;height:22px;border:1px solid var(--gold);opacity:0;transition:opacity .6s,transform .6s var(--ease)}
+.who article::before{top:12px;inset-inline-start:12px;border-width:1px 0 0 1px;transform:translate(8px,8px)}
+.who article::after{bottom:12px;inset-inline-end:12px;border-width:0 1px 1px 0;transform:translate(-8px,-8px)}
+.who article:hover::before,.who article:hover::after{opacity:1;transform:none}
+.who article:hover{transform:translateY(-10px);box-shadow:0 40px 70px -40px rgba(15,61,50,.45)}
+.svc details{transition:background .6s var(--ease),padding .6s var(--ease)}
+.svc details:hover:not([open]){background:rgba(168,132,62,.05)}
+.svc .let{transition:transform .6s var(--ease),color .6s}
+.svc details:hover .let{transform:translateX(-4px)}
+.btn{transition:transform .5s var(--ease),box-shadow .5s,background .4s,color .4s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 30px -18px rgba(15,61,50,.55)}
+.rail .fl{stroke-width:.8;opacity:.5}
+.rail .fl.on{fill:url(#gg);opacity:1;transition:fill .9s var(--ease),opacity .9s}
+.deepseal.in{opacity:.2}
+::selection{background:var(--gold);color:var(--green-2)}
+html{scrollbar-color:var(--gold) var(--bg)}
+@media (prefers-reduced-motion:reduce){.js .hero h1,.js .hero h1 em{animation:none!important}.js .osp h2.rv,.js .head h2.rv{filter:none!important;opacity:1!important;letter-spacing:.005em!important}.osp::before,.osp::after{transform:scaleX(1)}.osp h2::after{transform:rotate(45deg) scale(1)}}
+
+/* ===== Formspree form states ===== */
+form .err{font-size:13px;letter-spacing:0;color:#9A3B2E;min-height:0;line-height:1.35}
+form .err:empty{display:none}
+form [aria-invalid="true"]{border-color:#9A3B2E}
+.hp{position:absolute!important;inset-inline-start:-9999px;width:1px;height:1px;overflow:hidden}
+#formNote.ok{color:var(--green)}
+#formNote.bad{color:#9A3B2E}
+form button[disabled]{opacity:.65;cursor:progress}
+.hint{font-size:14px;color:var(--soft);margin:-6px 0 0}
+</style>
+<title>Registro</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Suez+One&family=Rubik:wght@300;400;500;600&display=swap">
 <style>
 /* Layout: a quiet atelier. Ivory paper, deep bottle-green ink and real gold used only as hairline, numeral and seal; sharp corners, wide margins, a tall classical serif. The building draws itself in gold line on a framed green plate and receives its registered seal. */
@@ -155,17 +222,7 @@ form label{display:grid;gap:4px;font-size:13px;letter-spacing:.08em;color:var(--
 form .full{grid-column:1/-1}
 input,select,textarea{font:400 17px var(--body);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:10px 2px;width:100%;transition:border-color .2s}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
-#formNote{font-size:15px;color:var(--gold-deep);padding:12px 16px;border:1px solid var(--gold);background:var(--bg)}
-#formNote.ok{color:var(--green);border-color:var(--green)}
-#formNote.bad{color:#9B2C1F;border-color:#9B2C1F}
-.err{min-height:1.2em;font-size:13px;letter-spacing:0;color:#9B2C1F}
-input[aria-invalid="true"]{border-color:#9B2C1F}
-.trap{position:absolute!important;inset-inline-start:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none;margin:0}
-form{position:relative}
-.btn[disabled]{opacity:.6;cursor:wait;transform:none}
-.consent{font-size:13px;color:var(--soft);line-height:1.6}
-.consent a{color:var(--gold-deep)}
-footer nav.legal{display:flex;gap:18px}footer nav.legal a{color:var(--on-green-soft);text-decoration:none;border-bottom:1px solid transparent}footer nav.legal a:hover{color:var(--on-green);border-color:var(--gold-hi)}
+#formNote{font-size:15px;color:var(--gold-deep)}
 footer{background:var(--green);color:var(--on-green-soft);font-size:14px;letter-spacing:.04em}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;padding-block:30px}
 footer .mark{font-size:24px;color:var(--on-green)}
@@ -196,6 +253,11 @@ footer .mark b{color:var(--gold-hi)}
 @media (max-width:520px){ form{grid-template-columns:minmax(0,1fr)} }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} html{scroll-behavior:auto} }
 </style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"><i></i></div>
+<aside class="rail" aria-hidden="true"><svg viewBox="0 0 30 400" preserveAspectRatio="none"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DCC082"/><stop offset="1" stop-color="#A8843E"/></linearGradient></defs><path class="roof" d="M4 40 L15 24 L26 40"/><rect class="fl" data-i="0" x="5" y="44" width="20" height="30"/><rect class="fl" data-i="1" x="5" y="78" width="20" height="30"/><rect class="fl" data-i="2" x="5" y="112" width="20" height="30"/><rect class="fl" data-i="3" x="5" y="146" width="20" height="30"/><rect class="fl" data-i="4" x="5" y="180" width="20" height="30"/><rect class="fl" data-i="5" x="5" y="214" width="20" height="30"/><rect class="fl" data-i="6" x="5" y="248" width="20" height="30"/><rect class="fl" data-i="7" x="5" y="282" width="20" height="30"/><rect class="fl" data-i="8" x="5" y="316" width="20" height="30"/><rect class="fl" data-i="9" x="5" y="350" width="20" height="30"/><g class="seal"><circle cx="15" cy="12" r="11" fill="none" stroke="#DCC082" stroke-width="1.4"/><path d="M9 12 l4 4 l8 -9" fill="none" stroke="#DCC082" stroke-width="2"/></g></svg></aside>
+
 
 <header>
   <div class="wrap">
@@ -308,7 +370,8 @@ footer .mark b{color:var(--gold-hi)}
 </section>
 
 <section class="contact on-deep" id="contact">
-  <div class="wrap">
+  <svg class="deepseal" viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="72" fill="none" stroke="#DCC082" stroke-width="3"/><circle cx="80" cy="80" r="62" fill="none" stroke="#DCC082" stroke-width="1"/><path d="M52 78 l20 20 l40 -44" fill="none" stroke="#DCC082" stroke-width="7" stroke-linecap="round"/><text x="80" y="128" text-anchor="middle" fill="#DCC082" font-size="26" font-family="David Libre,serif">נרשם</text></svg>
+<div class="wrap">
     <div>
       <div class="head">
         <p class="eyebrow">יצירת קשר</p>
@@ -316,25 +379,23 @@ footer .mark b{color:var(--gold-hi)}
         <p>שיחת היכרות קצרה, בלי התחייבות. נבין את מצב הרישום ונחזור אליכם עם הצעה לתוכנית עבודה.</p>
       </div>
       <dl class="details">
-        <div><dt>טלפון</dt><dd><a href="tel:0547506064">054-750-6064</a></dd></div>
+        <div><dt>טלפון ו־WhatsApp</dt><dd><a href="tel:0547506064">054-750-6064</a></dd></div>
         <div><dt>דואר אלקטרוני</dt><dd><a href="mailto:info@registro.co.il">info@registro.co.il</a></dd></div>
       </dl>
     </div>
-    <form id="lead" action="https://api.web3forms.com/submit" method="POST" novalidate>
-      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-      <input type="hidden" name="subject" value="פנייה חדשה מאתר Registro">
-      <input type="hidden" name="from_name" value="אתר Registro">
-      <input type="checkbox" name="botcheck" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <form id="lead" action="https://formspree.io/f/xqppyolo" method="POST" accept-charset="UTF-8">
       <h3>פרטי הפרויקט</h3>
-      <label>שם מלא *<input id="f-name" name="name" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="e-name"><span class="err" id="e-name" aria-live="polite"></span></label>
-      <label>טלפון *<input id="f-phone" name="phone" type="tel" inputmode="tel" dir="ltr" autocomplete="tel" required maxlength="20" aria-describedby="e-phone"><span class="err" id="e-phone" aria-live="polite"></span></label>
-      <label class="full">דואר אלקטרוני *<input id="f-email" name="email" type="email" dir="ltr" autocomplete="email" required maxlength="120" aria-describedby="e-email"><span class="err" id="e-email" aria-live="polite"></span></label>
+      <label>שם מלא *<input id="f-name" name="name" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="e-name"><span class="err" id="e-name"></span></label>
+      <label>טלפון *<input id="f-phone" name="phone" type="tel" dir="ltr" autocomplete="tel" inputmode="tel" required minlength="9" maxlength="20" pattern="[0-9+()\-\s.]{9,20}" aria-describedby="e-phone"><span class="err" id="e-phone"></span></label>
+      <label>אימייל<input id="f-email" name="email" type="email" dir="ltr" autocomplete="email" maxlength="254" aria-describedby="e-email"><span class="err" id="e-email"></span></label>
       <label>אני פונה בתור<select id="f-role" name="role"><option>יזם או קבלן</option><option>עורך דין</option><option>בעל נכס</option><option>נציגות בניין</option><option>אחר</option></select></label>
-      <label>שם החברה או המשרד<input id="f-org" name="org" autocomplete="organization" maxlength="120"></label>
-      <label class="full">עיר וכתובת הנכס או הפרויקט<input id="f-addr" name="addr" maxlength="200"></label>
-      <p class="full consent">שליחת הטופס מהווה הסכמה לכך שנחזור אליכם בנוגע לפנייה, בהתאם ל<a href="privacy.html">מדיניות הפרטיות</a>.</p>
-      <div class="full"><button class="btn btn-main" type="submit" id="f-submit">תחזרו אליי</button></div>
-      <p class="full" id="formNote" role="status" aria-live="polite" hidden></p>
+      <label>שם החברה או המשרד<input id="f-org" name="org" autocomplete="organization" maxlength="100" aria-describedby="e-org"><span class="err" id="e-org"></span></label>
+      <label class="full">עיר וכתובת הנכס או הפרויקט<input id="f-addr" name="addr" maxlength="200" aria-describedby="e-addr"><span class="err" id="e-addr"></span></label>
+      <input type="hidden" name="_subject" value="פנייה חדשה מאתר Registro">
+      <div class="hp" aria-hidden="true"><label>אל תמלאו שדה זה<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+      <div class="full"><button class="btn btn-main" type="submit">תחזרו אליי</button></div>
+      <p class="full hint">בשליחה תתבקשו לאשר שאינכם רובוט, ואז תוצג הודעת אישור על קבלת הפנייה.</p>
+      <p class="full" id="formNote" role="alert" hidden></p>
     </form>
   </div>
 </section>
@@ -344,53 +405,78 @@ footer .mark b{color:var(--gold-hi)}
   <div class="wrap">
     <a class="mark" href="#top">Registro<b>.</b></a>
     <span>© 2026 Registro · רישום והסדרת מקרקעין</span>
-    <nav class="legal" aria-label="מידע משפטי"><a href="privacy.html">מדיניות פרטיות</a><a href="accessibility.html">הצהרת נגישות</a></nav>
+    <span><a href="privacy.html">מדיניות פרטיות</a> · <a href="accessibility.html">הצהרת נגישות</a></span>
   </div>
 </footer>
 
 <script>
 document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').open=false})});
+
 (function(){
-  var f=document.getElementById('lead'),note=document.getElementById('formNote'),btn=document.getElementById('f-submit');
-  var loadedAt=Date.now(),sending=false;
-  var rules={
-    'f-name':function(v){return v.length<2?'נא להזין שם מלא.':''},
-    'f-phone':function(v){var d=v.replace(/[\s\-()]/g,'');return /^(\+972|0)([23489]|5\d|7\d)\d{7}$/.test(d)?'':'נא להזין מספר טלפון ישראלי תקין.'},
-    'f-email':function(v){return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)?'':'נא להזין כתובת דואר אלקטרוני תקינה.'}
-  };
-  function check(id){
-    var el=document.getElementById(id),msg=rules[id](el.value.trim());
-    document.getElementById('e-'+id.slice(2)).textContent=msg;
-    el.setAttribute('aria-invalid',msg?'true':'false');
-    return !msg;
-  }
-  Object.keys(rules).forEach(function(id){
-    var el=document.getElementById(id);
-    el.addEventListener('blur',function(){if(el.value.trim())check(id)});
-    el.addEventListener('input',function(){if(el.getAttribute('aria-invalid')==='true')check(id)});
-  });
-  function show(cls,text){note.hidden=false;note.className='full '+cls;note.textContent=text}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(sending)return;
-    var bad=Object.keys(rules).filter(function(id){return !check(id)});
-    if(bad.length){show('bad','יש לתקן את השדות המסומנים.');document.getElementById(bad[0]).focus();return}
-    if(f.botcheck.checked||Date.now()-loadedAt<3000){show('ok','תודה! הפרטים התקבלו, ונחזור אליכם בהקדם.');return}
-    var data=Object.fromEntries(new FormData(f));
-    data.name=data.name.trim();data.email=data.email.trim();data.phone=data.phone.trim();
-    data.replyto=data.email;
-    sending=true;btn.disabled=true;btn.firstChild.nodeValue='שולחים…';
-    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
-      .then(function(r){return r.json().then(function(j){if(!r.ok||!j.success)throw new Error(j.message||r.status);return j})})
-      .then(function(){
-        f.reset();loadedAt=Date.now();
-        Object.keys(rules).forEach(function(id){document.getElementById(id).removeAttribute('aria-invalid')});
-        show('ok','תודה! הפרטים התקבלו, ונחזור אליכם בהקדם.');
-      })
-      .catch(function(){show('bad','השליחה לא הצליחה. אפשר לנסות שוב בעוד רגע, או להתקשר ל־054-750-6064.')})
-      .finally(function(){sending=false;btn.disabled=false;btn.firstChild.nodeValue='תחזרו אליי'});
-  });
+var d=document.documentElement,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+d.classList.add('js');
+var sel='.osp,.whohead,.who article,.services .head,.svc details,.contact .head,.details,form';
+var els=[].slice.call(document.querySelectorAll(sel));
+els.forEach(function(e){e.classList.add('rv');var sib=e.parentNode.children;e.style.setProperty('--d',Math.min([].indexOf.call(sib,e),6))});
+var io=('IntersectionObserver' in window)&&new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+var wh=document.querySelector('.who');
+els.forEach(function(e){if(e.matches('.who article'))return;io?io.observe(e):e.classList.add('in')});
+if(wh){var io2=('IntersectionObserver' in window)?new IntersectionObserver(function(en){if(en[0].isIntersecting){[].forEach.call(wh.children,function(c){c.classList.add('in')});io2.disconnect()}},{threshold:.1}):null;io2?io2.observe(wh):[].forEach.call(wh.children,function(c){c.classList.add('in')})}
+var ds=document.querySelector('.deepseal');if(ds&&io)io.observe(ds);else if(ds)ds.classList.add('in');
+var rail=document.querySelector('.rail'),fl=[].slice.call(document.querySelectorAll('.rail .fl')),bar=document.querySelector('.topbar i'),con=document.getElementById('contact'),tk=false;
+function upd(){tk=false;var h=d.scrollHeight-innerHeight,p=h>0?Math.min(1,scrollY/h):0;
+ d.style.setProperty('--p',p);
+ if(!rm)d.style.setProperty('--py',Math.min(scrollY,700)*.06);
+ fl.forEach(function(f,i){f.classList.toggle('on',p>=(i+1)/11)});
+ rail.classList.toggle('done',p>.97);
+ if(con){var r=con.getBoundingClientRect();rail.classList.toggle('deep',r.top<innerHeight*.5)}
+}
+addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(upd)}},{passive:true});addEventListener('resize',upd);upd();
+})();
+
+(function(){
+var d=document.documentElement,hd=document.querySelector('header'),sh=document.querySelector('.hero .sheet');
+function h(){hd.classList.toggle('sc',scrollY>20)}addEventListener('scroll',h,{passive:true});h();
+if(sh&&matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+ sh.addEventListener('pointermove',function(e){var r=sh.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+  sh.style.setProperty('--mx',x*100+'%');sh.style.setProperty('--my',y*100+'%');
+  sh.style.setProperty('--mxp',(x-.5)*2);sh.style.setProperty('--myp',(y-.5)*2)});
+ sh.addEventListener('pointerleave',function(){sh.style.setProperty('--mxp',0);sh.style.setProperty('--myp',0)});
+}
 })();
 </script>
 
-</body></html>
+<script>
+(function(){
+var form=document.getElementById('lead');if(!form)return;
+form.noValidate=true; // custom messages with JS on; native validation still applies if JS is off
+var note=document.getElementById('formNote'),btn=form.querySelector('button[type=submit]'),label=btn.textContent,busy=false;
+var F={name:form.elements.name,phone:form.elements.phone,email:form.elements.email,org:form.elements.org,addr:form.elements.addr};
+function say(t){note.hidden=!t;note.className='full bad';note.textContent=t||''}
+function clr(){[].forEach.call(form.querySelectorAll('.err'),function(e){e.textContent=''});[].forEach.call(form.querySelectorAll('[aria-invalid]'),function(i){i.removeAttribute('aria-invalid')})}
+function bad(k,t){document.getElementById('e-'+k).textContent=t;F[k].setAttribute('aria-invalid','true')}
+function validate(){
+ clr();var b=[],v;
+ v=F.name.value.trim();if(!/^[\p{L}][\p{L}\p{M}\s'"׳״.\-]{1,79}$/u.test(v))b.push(['name','נא להזין שם מלא (2 עד 80 תווים, אותיות בלבד).']);
+ v=F.phone.value.replace(/[\s\-().]/g,'');if(!/^(\+?972|0)\d{8,9}$/.test(v))b.push(['phone','נא להזין מספר טלפון ישראלי תקין, למשל 054-7506064.']);
+ v=F.email.value.trim();if(v&&(v.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)))b.push(['email','נא להזין כתובת אימייל תקינה, או להשאיר את השדה ריק.']);
+ if(F.org.value.length>100)b.push(['org','עד 100 תווים.']);
+ if(F.addr.value.length>200)b.push(['addr','עד 200 תווים.']);
+ b.forEach(function(x){bad(x[0],x[1])});
+ if(b.length){say('נא לתקן את השדות המסומנים.');F[b[0][0]].focus();return false}
+ say('');return true;
+}
+function unlock(){busy=false;btn.disabled=false;btn.removeAttribute('aria-busy');btn.textContent=label;say('')}
+form.addEventListener('submit',function(e){
+ if(busy){e.preventDefault();return}            // second submit while the first POST is in flight: ignored
+ if(!validate()){e.preventDefault();return}
+ busy=true;btn.setAttribute('aria-busy','true');btn.textContent='שולח...';
+ setTimeout(function(){btn.disabled=true},0);   // disabled only after the browser has started the POST
+ // no timer and no status message: a normal HTML POST has no verifiable result on this page, the result page is Formspree's
+});
+// coming back with the browser back button (bfcache): restore the form
+addEventListener('pageshow',function(e){if(e.persisted)unlock()});  // Back button restored this page from bfcache with the form still locked
+})();
+</script>
+</body>
+</html>
